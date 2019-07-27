@@ -21,12 +21,6 @@ sans-serif;
 
 // Global
 
-*,
-*::before,
-*::after {
-    box-sizing: border-box;
-}
-
 body {
     font-size: 16px;
     font-family: $text;
@@ -38,12 +32,99 @@ body {
     text-align: center;
 }
 
-.container {
-    max-width: 1140px;
-    padding: 0 20px;
-    margin: 0 auto;
-}
-
 section {
     padding: 96px 0;
+}
+
+// Splash & Navigation
+
+.splash {
+    height: 100vh;
+    position: relative;
+    background-image: url(/images/Background_Image.png);
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+
+    .navigation {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 12px;
+
+        .logo {
+            font-family: $text-decoration;
+            color: $color-three;
+            font-size: 26px;
+            line-height: 41px;
+
+            h1 {
+                font-weight: 400;
+                padding: 12px 12px 12px 50px;
+                margin: 0;
+            }
+        }
+
+        .menu {
+            list-style-type: none;
+            display: flex;
+
+            li {
+                margin-right: 36px;
+
+                a {
+                    text-decoration: none;
+                    color: $color-one;
+                    font-size: 14px;
+                    font-weight: 400;
+                    line-height: 41px;
+                    text-transform: uppercase;
+                    font-family: $text-title;
+                }
+            }
+        }
+    }
+
+    .splash-inner {
+        margin-top: 20%;
+
+        .title {
+            color: $color-one;
+            font-family: $text;
+            font-size: 40px;
+            font-style: italic;
+            letter-spacing: -1px;
+            font-weight: 300;
+            margin: 96px 0 0 0;
+        }
+
+        .subtitle {
+            color: $color-one;
+            font-family: $text-title;
+            font-size: 75px;
+            text-transform: uppercase;
+            letter-spacing: -1.88px;
+            margin: 0;
+        }
+
+        .btn {
+            min-width: 240px;
+            padding: 16px;
+            font-family: $text-title;
+            background-color: $color-three;
+            text-align: center;
+            margin-top: 24px;
+            color: $color-one;
+            font-size: 18px;
+            font-weight: 700;
+            text-transform: uppercase;
+            border: solid 5px $color-three;
+            cursor: pointer;
+            transition: .5s;
+
+            &:hover {
+                background-color: $color-one;
+                color: $color-three;
+            }
+        }
+    }
 }
