@@ -1,3 +1,49 @@
 //font-family: 'Meie Script', cursive;
 //font-family: 'Merriweather', serif;
 //font-family: 'Roboto', sans-serif;
+
+// Variables
+
+$color-one: #ffffff;
+$color-two: #000000;
+$color-three: #fed136;
+$color-four: #f7f7f7;
+$color-five: #555555;
+$color-six: #222222;
+$color-seven: #777777;
+
+$text: 'Merriweather',
+serif;
+$text-decoration: 'Meie Script',
+cursive;
+$text-title: 'Roboto',
+sans-serif;
+
+// Global
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 16px;
+    font-family: $text;
+    font-weight: 400;
+    letter-spacing: -0.35px;
+    line-height: 1.7;
+    color: $color-seven;
+    margin: 0;
+    text-align: center;
+}
+
+.container {
+    max-width: 1140px;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+
+section {
+    padding: 96px 0;
+}

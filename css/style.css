@@ -1,0 +1,27 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 16px;
+  font-family: "Merriweather", serif;
+  font-weight: 400;
+  letter-spacing: -0.35px;
+  line-height: 1.7;
+  color: #777777;
+  margin: 0;
+  text-align: center;
+}
+
+.container {
+  max-width: 1140px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+section {
+  padding: 96px 0;
+}
+/*# sourceMappingURL=style.css.map */
