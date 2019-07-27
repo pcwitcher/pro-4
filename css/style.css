@@ -22,6 +22,12 @@ section {
   background-attachment: fixed;
 }
 
+.splash .dark {
+  background-color: rgba(0, 0, 0, 0.55);
+  width: 100%;
+  height: 100%;
+}
+
 .splash .navigation {
   display: -ms-flexbox;
   display: flex;
@@ -97,7 +103,7 @@ section {
   font-size: 18px;
   font-weight: 700;
   text-transform: uppercase;
-  border: solid 5px #fed136;
+  border: solid 3px #fed136;
   cursor: pointer;
   transition: .5s;
 }
@@ -105,5 +111,56 @@ section {
 .splash .splash-inner .btn:hover {
   background-color: #ffffff;
   color: #fed136;
+}
+
+.services-boxes {
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+}
+
+.services-boxes .services-inner {
+  margin-bottom: 45px;
+}
+
+.services-boxes .services-inner .services-title {
+  color: #222222;
+  font-family: "Roboto", sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 75px;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  margin-bottom: 0;
+}
+
+.services-boxes .services-inner .services-sentence {
+  color: #777777;
+  margin-top: 0;
+}
+
+.services-boxes .service-inner i {
+  border: 3px solid #fed136;
+  background-color: #ffffff;
+  width: 68px;
+  height: 68px;
+  border-radius: 50%;
+  font-size: 30px;
+  line-height: 62px;
+  text-align: center;
+  color: #fed136;
+}
+
+.services-boxes .service-inner-title {
+  color: #222222;
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 75px;
+  letter-spacing: -0.45px;
+}
+
+.services-boxes .service-description {
+  font-size: 14px;
+  letter-spacing: -0.35px;
 }
 /*# sourceMappingURL=style.css.map */
