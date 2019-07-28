@@ -10,7 +10,7 @@ body {
 }
 
 section {
-  padding: 96px 0;
+  padding: 48px 0;
 }
 
 .splash {
@@ -70,7 +70,7 @@ section {
 }
 
 .splash .splash-inner {
-  margin-top: 20%;
+  margin-top: 15%;
 }
 
 .splash .splash-inner .title {
@@ -162,5 +162,96 @@ section {
 .services-boxes .service-description {
   font-size: 14px;
   letter-spacing: -0.35px;
+}
+
+.portfolio {
+  background-color: #f7f7f7;
+}
+
+.portfolio .portfolio-title-top {
+  color: #222222;
+  font-family: "Roboto", sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 75px;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  margin-bottom: 0;
+}
+
+.portfolio .portfolio-sentence-top {
+  margin-top: 0;
+  margin-bottom: 60px;
+}
+
+.portfolio .portfolio-image {
+  position: relative;
+  padding-top: 15px;
+}
+
+.portfolio .portfolio-image::before {
+  position: absolute;
+  content: '';
+  background: #000000;
+  opacity: .6;
+  width: 291px;
+  height: 300px;
+  padding: 0;
+  display: none;
+  transition: 1s;
+}
+
+.portfolio .portfolio-image:hover::before {
+  display: block;
+}
+
+.portfolio .portfolio-image .image-content {
+  color: #DAA520;
+  position: absolute;
+  opacity: 0;
+  left: 50%;
+  top: 35%;
+  transform: translateX(-50%);
+  transition: 1s;
+  width: 291px;
+  height: 300px;
+}
+
+.portfolio .portfolio-image .image-content:hover {
+  opacity: 1;
+}
+
+.portfolio .portfolio-image .image-content .image-btn {
+  border: solid 1px #DAA520;
+  background: transparent;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-family: "Roboto", sans-serif;
+  color: #DAA520;
+  transition: 1s;
+}
+
+.portfolio .portfolio-image .image-content .image-btn:hover {
+  background-color: #DAA520;
+  color: #000000;
+}
+
+.portfolio .portfolio-image .image-content .under-btn {
+  font-size: 8px;
+}
+
+.portfolio .portfolio-image .portfolio-image-title {
+  color: #333333;
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: -0.45px;
+  margin-bottom: 0;
+}
+
+.portfolio .portfolio-image .portfolio-paragraph {
+  font-size: 14px;
+  color: #737373;
+  margin-top: 0;
 }
 /*# sourceMappingURL=style.css.map */
