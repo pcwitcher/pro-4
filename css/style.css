@@ -69,6 +69,10 @@ section {
   font-family: "Roboto", sans-serif;
 }
 
+.splash .navigation .menu li a:hover {
+  color: #fed136;
+}
+
 .splash .splash-inner {
   margin-top: 15%;
 }
@@ -196,9 +200,10 @@ section {
   opacity: .6;
   width: 291px;
   height: 300px;
-  padding: 0;
   display: none;
   transition: 1s;
+  left: 44px;
+  top: 15px;
 }
 
 .portfolio .portfolio-image:hover::before {
@@ -240,18 +245,64 @@ section {
   font-size: 8px;
 }
 
-.portfolio .portfolio-image .portfolio-image-title {
+.portfolio .portfolio-image .portfolio-title {
+  background-color: #ffffff;
+  width: 291px;
+  padding: 24px 0;
+  margin: 0 auto;
+}
+
+.portfolio .portfolio-image .portfolio-title .portfolio-image-title {
   color: #333333;
   font-family: "Roboto", sans-serif;
   font-size: 18px;
   font-weight: 700;
   letter-spacing: -0.45px;
-  margin-bottom: 0;
+  margin: 0;
 }
 
-.portfolio .portfolio-image .portfolio-paragraph {
+.portfolio .portfolio-image .portfolio-title .portfolio-paragraph {
   font-size: 14px;
   color: #737373;
   margin-top: 0;
+}
+
+.page-footer {
+  padding: 24px 0;
+}
+
+.page-footer .footer-paragraph {
+  padding: 9px 96px;
+  color: #555555;
+  font-size: 14px;
+  line-height: 22px;
+  letter-spacing: -0.35px;
+}
+
+.page-footer .social-media li {
+  display: inline-block;
+  padding-right: 12px;
+}
+
+.page-footer .social-media i {
+  font-size: 16px;
+  color: #ffffff;
+  width: 40px;
+  height: 40px;
+  background: #222222;
+  border-radius: 50%;
+  line-height: 40px;
+  border: 2px solid #000000;
+  transition: 0.5s;
+}
+
+.page-footer .social-media i:hover {
+  color: #000000;
+  border: 2px solid #000000;
+  background: #ffffff;
+}
+
+.page-footer .social-media a {
+  font-size: 0;
 }
 /*# sourceMappingURL=style.css.map */
