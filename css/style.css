@@ -16,7 +16,7 @@ section {
 .splash {
   height: 100vh;
   position: relative;
-  background-image: url(./images/Background_Image.png);
+  background-image: url(./../images/Background_Image.png);
   background-position: center center;
   background-size: cover;
   background-attachment: fixed;
