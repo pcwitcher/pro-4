@@ -127,9 +127,9 @@ section {
         .menu {
             list-style-type: none;
             display: flex;
+        }
 
-
-
+        .ul-list {
             @include mobile {
                 flex-direction: column;
                 position: absolute;
@@ -141,93 +141,95 @@ section {
                 opacity: 0.9;
                 display: none;
 
-                .show {
+                .pokaz {
                     display: block;
-                }
-            }
 
-            li {
-                margin-right: 36px;
-
-                a {
-                    text-decoration: none;
-                    color: $color-one;
-                    font-size: 14px;
-                    font-weight: 400;
-                    line-height: 41px;
-                    text-transform: uppercase;
-                    font-family: $text-title;
-
-
-
-                    &:hover {
-                        color: $color-three;
-                    }
                 }
             }
         }
-    }
 
-    // Splash
+        li {
+            margin-right: 36px;
 
-    .splash-inner {
-        margin-top: 15%;
-
-        .title {
-            color: $color-one;
-            font-family: $text;
-            font-size: 40px;
-            font-style: italic;
-            letter-spacing: -1px;
-            font-weight: 300;
-            margin: 96px 0 0 0;
-
-            @include mobile {
-                font-size: 24px;
-            }
-        }
-
-        .subtitle {
-            color: $color-one;
-            font-family: $text-title;
-            font-size: 75px;
-            text-transform: uppercase;
-            letter-spacing: -1.88px;
-            margin: 0;
-
-            @include mobile {
-                font-size: 35px;
-            }
-        }
-
-        .btn {
-            min-width: 240px;
-            padding: 16px;
-            font-family: $text-title;
-            background-color: $color-three;
-            text-align: center;
-            margin-top: 24px;
-            color: $color-one;
-            font-size: 18px;
-            font-weight: 700;
-            text-transform: uppercase;
-            border: solid 3px $color-three;
-            cursor: pointer;
-            transition: .5s;
-
-            @include mobile {
-                min-width: 160px;
+            a {
+                text-decoration: none;
+                color: $color-one;
                 font-size: 14px;
-                padding: 8px;
-            }
+                font-weight: 400;
+                line-height: 41px;
+                text-transform: uppercase;
+                font-family: $text-title;
 
-            &:hover {
-                background-color: $color-one;
-                color: $color-three;
+
+
+                &:hover {
+                    color: $color-three;
+                }
             }
         }
     }
 }
+
+// Splash
+
+.splash-inner {
+    margin-top: 15%;
+
+    .title {
+        color: $color-one;
+        font-family: $text;
+        font-size: 40px;
+        font-style: italic;
+        letter-spacing: -1px;
+        font-weight: 300;
+        margin: 96px 0 0 0;
+
+        @include mobile {
+            font-size: 24px;
+        }
+    }
+
+    .subtitle {
+        color: $color-one;
+        font-family: $text-title;
+        font-size: 75px;
+        text-transform: uppercase;
+        letter-spacing: -1.88px;
+        margin: 0;
+
+        @include mobile {
+            font-size: 35px;
+        }
+    }
+
+    .btn {
+        min-width: 240px;
+        padding: 16px;
+        font-family: $text-title;
+        background-color: $color-three;
+        text-align: center;
+        margin-top: 24px;
+        color: $color-one;
+        font-size: 18px;
+        font-weight: 700;
+        text-transform: uppercase;
+        border: solid 3px $color-three;
+        cursor: pointer;
+        transition: .5s;
+
+        @include mobile {
+            min-width: 160px;
+            font-size: 14px;
+            padding: 8px;
+        }
+
+        &:hover {
+            background-color: $color-one;
+            color: $color-three;
+        }
+    }
+}
+
 
 // Services
 
