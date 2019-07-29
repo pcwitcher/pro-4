@@ -28,6 +28,31 @@ section {
   height: 100%;
 }
 
+.splash .burger {
+  width: 100%;
+  padding: 10px 20px;
+  background: transparent;
+  text-align: right;
+  color: #ffffff;
+  font-size: 30px;
+  display: none;
+  cursor: pointer;
+}
+
+@media (max-width: 680px) {
+  .splash .burger {
+    display: block;
+  }
+}
+
+.splash .fas {
+  display: none;
+}
+
+.splash .show {
+  display: block;
+}
+
 .splash .navigation {
   display: -ms-flexbox;
   display: flex;
@@ -43,6 +68,14 @@ section {
   line-height: 41px;
 }
 
+@media (max-width: 680px) {
+  .splash .navigation .logo {
+    position: absolute;
+    left: 0;
+    top: 10px;
+  }
+}
+
 .splash .navigation .logo h1 {
   font-weight: 400;
   padding: 12px 12px 12px 50px;
@@ -53,6 +86,24 @@ section {
   list-style-type: none;
   display: -ms-flexbox;
   display: flex;
+}
+
+@media (max-width: 680px) {
+  .splash .navigation .menu {
+    -ms-flex-direction: column;
+        flex-direction: column;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #DAA520;
+    width: 100%;
+    height: 30%;
+    opacity: 0.9;
+    display: none;
+  }
+  .splash .navigation .menu .show {
+    display: block;
+  }
 }
 
 .splash .navigation .menu li {
@@ -87,6 +138,12 @@ section {
   margin: 96px 0 0 0;
 }
 
+@media (max-width: 680px) {
+  .splash .splash-inner .title {
+    font-size: 24px;
+  }
+}
+
 .splash .splash-inner .subtitle {
   color: #ffffff;
   font-family: "Roboto", sans-serif;
@@ -94,6 +151,12 @@ section {
   text-transform: uppercase;
   letter-spacing: -1.88px;
   margin: 0;
+}
+
+@media (max-width: 680px) {
+  .splash .splash-inner .subtitle {
+    font-size: 35px;
+  }
 }
 
 .splash .splash-inner .btn {
@@ -110,6 +173,14 @@ section {
   border: solid 3px #fed136;
   cursor: pointer;
   transition: .5s;
+}
+
+@media (max-width: 680px) {
+  .splash .splash-inner .btn {
+    min-width: 160px;
+    font-size: 14px;
+    padding: 8px;
+  }
 }
 
 .splash .splash-inner .btn:hover {
@@ -135,6 +206,12 @@ section {
   text-transform: uppercase;
   letter-spacing: -1px;
   margin-bottom: 0;
+}
+
+@media (max-width: 680px) {
+  .services-boxes .services-inner .services-title {
+    font-size: 32px;
+  }
 }
 
 .services-boxes .services-inner .services-sentence {
@@ -181,6 +258,12 @@ section {
   text-transform: uppercase;
   letter-spacing: -1px;
   margin-bottom: 0;
+}
+
+@media (max-width: 680px) {
+  .portfolio .portfolio-title-top {
+    font-size: 32px;
+  }
 }
 
 .portfolio .portfolio-sentence-top {
@@ -284,7 +367,7 @@ section {
   padding-right: 12px;
 }
 
-.page-footer .social-media i {
+.page-footer .social-media li i {
   font-size: 16px;
   color: #ffffff;
   width: 40px;
@@ -296,13 +379,13 @@ section {
   transition: 0.5s;
 }
 
-.page-footer .social-media i:hover {
+.page-footer .social-media li i:hover {
   color: #000000;
   border: 2px solid #000000;
   background: #ffffff;
 }
 
-.page-footer .social-media a {
+.page-footer .social-media li a {
   font-size: 0;
 }
 /*# sourceMappingURL=style.css.map */

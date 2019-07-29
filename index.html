@@ -16,6 +16,10 @@
 <body>
     <header class="splash">
         <div class="dark">
+            <div class="burger">
+                <i class="fas fa-bars show"></i>
+                <i class="fas fa-times"></i>
+            </div>
             <nav class="navigation">
                 <div class="logo">
                     <h1>Golden</h1>
@@ -36,25 +40,25 @@
         </div>
     </header>
 
-    <section class="container services">
+    <section class="container-fluid services">
         <div class="row services-boxes">
             <div class="services-inner container-fluid">
                 <h3 class="services-title">services</h3>
                 <p class="services-sentence">Proin iaculis purus consequat sem cure.</p>
             </div>
-            <div class="service-inner col-4">
+            <div class="service-inner col-md-4">
                 <i class="fas fa-shopping-basket"></i>
                 <h4 class="service-inner-title">E-Commerce</h4>
                 <p class="service-description">Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum
                     suscipit aenean rhoncus posuere odio in tincidunt.</p>
             </div>
-            <div class="service-inner col-4">
+            <div class="service-inner col-md-4">
                 <i class="fas fa-laptop"></i>
                 <h4 class="service-inner-title">Responsive Web</h4>
                 <p class="service-description">Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum
                     suscipit aenean rhoncus posuere odio in tincidunt.</p>
             </div>
-            <div class="service-inner col-4">
+            <div class="service-inner col-md-4">
                 <i class="fas fa-lock"></i>
                 <h4 class="service-inner-title">Web Security</h4>
                 <p class="service-description">Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum
@@ -63,12 +67,12 @@
         </div>
     </section>
     <section class="container portfolio">
+        <div class="container">
+            <h3 class="portfolio-title-top">our portfolio</h3>
+            <p class="portfolio-sentence-top">Proin iaculis purus consequat sem cure.</p>
+        </div>
         <div class="row portfolio-gallery">
-            <div class="container">
-                <h3 class="portfolio-title-top">our portfolio</h3>
-                <p class="portfolio-sentence-top">Proin iaculis purus consequat sem cure.</p>
-            </div>
-            <div class="portfolio-image col-4">
+            <div class="portfolio-image col-lg-4 col-md-6 col-sm-12">
                 <img src="./images/Image1.png" alt="ebony & ivory">
                 <div class="image-content">
                     <button class="image-btn">Ebony&Ivory</button>
@@ -79,7 +83,7 @@
                     <p class="portfolio-paragraph">Branding</p>
                 </div>
             </div>
-            <div class="portfolio-image col-4">
+            <div class="portfolio-image col-lg-4 col-md-6 col-sm-12">
                 <img src="./images/Image2.png" alt="Smart Stationary">
                 <div class="image-content">
                     <button class="image-btn">Smart Stationary</button>
@@ -90,7 +94,7 @@
                     <p class="portfolio-paragraph">Print Design</p>
                 </div>
             </div>
-            <div class="portfolio-image col-4">
+            <div class="portfolio-image col-lg-4 col-md-6 col-sm-12">
                 <img src="./images/Image3.png" alt="Clever Poster">
                 <div class="image-content">
                     <button class="image-btn">Clever Poster</button>
@@ -101,7 +105,7 @@
                     <p class="portfolio-paragraph">Print Design</p>
                 </div>
             </div>
-            <div class="portfolio-image col-4">
+            <div class="portfolio-image col-lg-4 col-md-6 col-sm-12">
                 <img src="./images/Image4.png" alt="Vinyl Record">
                 <div class="image-content">
                     <button class="image-btn">Vinyl Record</button>
@@ -112,7 +116,7 @@
                     <p class="portfolio-paragraph">Product Mock-Up</p>
                 </div>
             </div>
-            <div class="portfolio-image col-4">
+            <div class="portfolio-image col-lg-4 col-md-6 col-sm-12">
                 <img src="./images/Image5.png" alt="Treehouse Template">
                 <div class="image-content">
                     <button class="image-btn">Treehouse Template</button>
@@ -123,7 +127,7 @@
                     <p class="portfolio-paragraph">Web Design</p>
                 </div>
             </div>
-            <div class="portfolio-image col-4">
+            <div class="portfolio-image col-lg-4 col-md-6 col-sm-12">
                 <img src="./images/Image6.png" alt="Burned Logo">
                 <div class="image-content">
                     <button class="image-btn">Burned Logo</button>
@@ -136,8 +140,8 @@
             </div>
         </div>
     </section>
-    <footer class="page-footer ">
-        <div class="container row">
+    <footer class="page-footer">
+        <div class="container row col-sm-12">
             <p class="footer-paragraph">
                 © Jaroslaw Mazur. All right reserved.
             </p>
@@ -149,6 +153,7 @@
             </ul>
         </div>
     </footer>
+    <script src="./js/script.js"></script>
 </body>
 
 </html>

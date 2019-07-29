@@ -22,6 +22,23 @@ cursive;
 $text-title: 'Roboto',
 sans-serif;
 
+$tablet: 992px;
+
+@mixin tablet {
+    @media (max-width: #{$tablet}) {
+        @content
+    }
+}
+
+$mobile: 680px;
+
+@mixin mobile {
+    @media (max-width: #{$mobile}) {
+        @content
+    }
+}
+
+
 // Global
 
 body {
@@ -57,16 +74,48 @@ section {
 
     // Navigation
 
+    .burger {
+        width: 100%;
+        padding: 10px 20px;
+        background: transparent;
+        text-align: right;
+        color: $color-one;
+        font-size: 30px;
+        display: none;
+        cursor: pointer;
+
+        @include mobile {
+            display: block;
+
+        }
+    }
+
+    .fas {
+        display: none;
+    }
+
+    .show {
+        display: block;
+    }
+
     .navigation {
         display: flex;
         justify-content: space-between;
         padding-top: 12px;
+
+
 
         .logo {
             font-family: $text-decoration;
             color: $color-three;
             font-size: 26px;
             line-height: 41px;
+
+            @include mobile {
+                position: absolute;
+                left: 0;
+                top: 10px;
+            }
 
             h1 {
                 font-weight: 400;
@@ -79,6 +128,24 @@ section {
             list-style-type: none;
             display: flex;
 
+
+
+            @include mobile {
+                flex-direction: column;
+                position: absolute;
+                left: 50%;
+                transform: translateX(-50%);
+                background-color: $color-gold;
+                width: 100%;
+                height: 30%;
+                opacity: 0.9;
+                display: none;
+
+                .show {
+                    display: block;
+                }
+            }
+
             li {
                 margin-right: 36px;
 
@@ -90,6 +157,8 @@ section {
                     line-height: 41px;
                     text-transform: uppercase;
                     font-family: $text-title;
+
+
 
                     &:hover {
                         color: $color-three;
@@ -112,6 +181,10 @@ section {
             letter-spacing: -1px;
             font-weight: 300;
             margin: 96px 0 0 0;
+
+            @include mobile {
+                font-size: 24px;
+            }
         }
 
         .subtitle {
@@ -121,6 +194,10 @@ section {
             text-transform: uppercase;
             letter-spacing: -1.88px;
             margin: 0;
+
+            @include mobile {
+                font-size: 35px;
+            }
         }
 
         .btn {
@@ -137,6 +214,12 @@ section {
             border: solid 3px $color-three;
             cursor: pointer;
             transition: .5s;
+
+            @include mobile {
+                min-width: 160px;
+                font-size: 14px;
+                padding: 8px;
+            }
 
             &:hover {
                 background-color: $color-one;
@@ -163,6 +246,10 @@ section {
             text-transform: uppercase;
             letter-spacing: -1px;
             margin-bottom: 0;
+
+            @include mobile {
+                font-size: 32px;
+            }
         }
 
         .services-sentence {
@@ -171,16 +258,20 @@ section {
         }
     }
 
-    .service-inner i {
-        border: 3px solid $color-three;
-        background-color: $color-one;
-        width: 68px;
-        height: 68px;
-        border-radius: 50%;
-        font-size: 30px;
-        line-height: 62px;
-        text-align: center;
-        color: $color-three;
+    .service-inner {
+
+
+        i {
+            border: 3px solid $color-three;
+            background-color: $color-one;
+            width: 68px;
+            height: 68px;
+            border-radius: 50%;
+            font-size: 30px;
+            line-height: 62px;
+            text-align: center;
+            color: $color-three;
+        }
     }
 
     .service-inner-title {
@@ -198,10 +289,13 @@ section {
     }
 }
 
+
+
 // Portfolio
 
 .portfolio {
     background-color: $color-four;
+
 
     .portfolio-title-top {
         color: $color-six;
@@ -212,6 +306,10 @@ section {
         text-transform: uppercase;
         letter-spacing: -1px;
         margin-bottom: 0;
+
+        @include mobile {
+            font-size: 32px;
+        }
     }
 
     .portfolio-sentence-top {
@@ -280,7 +378,6 @@ section {
         .portfolio-title {
             background-color: $color-one;
             width: 291px;
-            //padding-left: 44px;
             padding: 24px 0;
             margin: 0 auto;
 
@@ -321,30 +418,29 @@ section {
         li {
             display: inline-block;
             padding-right: 12px;
-        }
 
-        i {
-            font-size: 16px;
-            color: $color-one;
-            width: 40px;
-            height: 40px;
-            background: $color-six;
-            border-radius: 50%;
-            line-height: 40px;
-            border: 2px solid $color-two;
-            transition: 0.5s;
-
-            &:hover {
-                color: $color-two;
+            i {
+                font-size: 16px;
+                color: $color-one;
+                width: 40px;
+                height: 40px;
+                background: $color-six;
+                border-radius: 50%;
+                line-height: 40px;
                 border: 2px solid $color-two;
-                background: $color-one;
+                transition: 0.5s;
+
+                &:hover {
+                    color: $color-two;
+                    border: 2px solid $color-two;
+                    background: $color-one;
+                }
+            }
+
+            a {
+                font-size: 0;
             }
         }
-
-        a {
-            font-size: 0;
-        }
-
 
     }
 }
