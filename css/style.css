@@ -20,6 +20,9 @@ section {
   background-position: center center;
   background-size: cover;
   background-attachment: fixed;
+  /*.fas {*/
+  /*    display: none;
+    }*/
 }
 
 .splash .dark {
@@ -28,7 +31,7 @@ section {
   height: 100%;
 }
 
-.splash .burger {
+.splash .dark .burger {
   width: 100%;
   padding: 10px 20px;
   background: transparent;
@@ -39,18 +42,18 @@ section {
   cursor: pointer;
 }
 
-@media (max-width: 680px) {
-  .splash .burger {
-    display: block;
-  }
-}
-
-.splash .fas {
+.splash .dark .burger .fas {
   display: none;
 }
 
-.splash .show {
+.splash .dark .burger .show {
   display: block;
+}
+
+@media (max-width: 680px) {
+  .splash .dark .burger {
+    display: block;
+  }
 }
 
 .splash .navigation {
@@ -89,7 +92,8 @@ section {
 }
 
 @media (max-width: 680px) {
-  .splash .navigation .ul-list {
+  .splash .navigation .menu {
+    display: none;
     -ms-flex-direction: column;
         flex-direction: column;
     position: absolute;
@@ -99,11 +103,11 @@ section {
     width: 100%;
     height: 30%;
     opacity: 0.9;
-    display: none;
   }
-  .splash .navigation .ul-list .pokaz {
-    display: block;
-  }
+}
+
+.splash .navigation ul.menu.show {
+  display: block;
 }
 
 .splash .navigation li {
@@ -124,11 +128,11 @@ section {
   color: #fed136;
 }
 
-.splash-inner {
+.splash .splash-inner {
   margin-top: 15%;
 }
 
-.splash-inner .title {
+.splash .splash-inner .title {
   color: #ffffff;
   font-family: "Merriweather", serif;
   font-size: 40px;
@@ -139,12 +143,12 @@ section {
 }
 
 @media (max-width: 680px) {
-  .splash-inner .title {
+  .splash .splash-inner .title {
     font-size: 24px;
   }
 }
 
-.splash-inner .subtitle {
+.splash .splash-inner .subtitle {
   color: #ffffff;
   font-family: "Roboto", sans-serif;
   font-size: 75px;
@@ -154,12 +158,12 @@ section {
 }
 
 @media (max-width: 680px) {
-  .splash-inner .subtitle {
+  .splash .splash-inner .subtitle {
     font-size: 35px;
   }
 }
 
-.splash-inner .btn {
+.splash .splash-inner .btn {
   min-width: 240px;
   padding: 16px;
   font-family: "Roboto", sans-serif;
@@ -176,14 +180,14 @@ section {
 }
 
 @media (max-width: 680px) {
-  .splash-inner .btn {
+  .splash .splash-inner .btn {
     min-width: 160px;
     font-size: 14px;
     padding: 8px;
   }
 }
 
-.splash-inner .btn:hover {
+.splash .splash-inner .btn:hover {
   background-color: #ffffff;
   color: #fed136;
 }
@@ -387,5 +391,18 @@ section {
 
 .page-footer .social-media li a {
   font-size: 0;
+}
+
+.show-mobile {
+  -ms-flex-direction: column;
+      flex-direction: column;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #DAA520;
+  width: 100%;
+  height: 30%;
+  opacity: 0.9;
+  display: block;
 }
 /*# sourceMappingURL=style.css.map */
