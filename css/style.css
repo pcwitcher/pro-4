@@ -117,7 +117,6 @@ section {
 
 @media (max-width: 680px) {
   .splash .navigation li {
-    margin: 0 auto;
     margin-top: 24px;
   }
 }
