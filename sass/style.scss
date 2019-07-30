@@ -100,10 +100,6 @@ section {
         }
     }
 
-    /*.fas {*/
-    /*    display: none;
-    }*/
-
     .navigation {
         display: flex;
         justify-content: space-between;
@@ -128,6 +124,10 @@ section {
             }
         }
 
+        ul {
+            transition: 2s;
+        }
+
         .menu {
             list-style-type: none;
             display: flex;
@@ -140,7 +140,7 @@ section {
                 transform: translateX(-50%);
                 background-color: $color-gold;
                 width: 100%;
-                height: 30%;
+                height: 50%;
                 opacity: 0.9;
             }
         }
@@ -153,6 +153,11 @@ section {
         li {
             margin-right: 36px;
 
+            @include mobile {
+                margin: 0 auto;
+                margin-top: 24px;
+            }
+
             a {
                 text-decoration: none;
                 color: $color-one;
@@ -162,6 +167,9 @@ section {
                 text-transform: uppercase;
                 font-family: $text-title;
 
+                @include mobile {
+                    font-size: 20px;
+                }
 
 
                 &:hover {

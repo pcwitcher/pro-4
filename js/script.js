@@ -6,10 +6,9 @@ const menu = document.querySelector(".menu");
 
 
 burger.addEventListener("click", function () {
-    iconBurger.classList.toggle("show"); //tak
+    iconBurger.classList.toggle("show");
     iconX.classList.toggle("show");
-    menu.classList.toggle("show"); //nie
-    //burger.classList.toggle('show')
+    menu.classList.toggle("show");
 });
 
 /*burger.addEventListener("click", function () {
